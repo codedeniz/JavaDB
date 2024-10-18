@@ -6,7 +6,7 @@ import java.sql.Statement;
 public class DBUtility {
     private static final String URL = "jdbc:mysql://localhost:3307/CurrencyExchange";;
     private static final String USER = "root";
-    private static final String PASSWORD = "Gokdeniz0?";
+    private static final String PASSWORD = "i wont add";
 
     public static Connection getConnection() throws Exception {
         return DriverManager.getConnection(URL, USER, PASSWORD);
