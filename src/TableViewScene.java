@@ -15,19 +15,18 @@ public class TableViewScene extends BorderPane {
         TableView<ExchangeRate> tableView = new TableView<>();
         ObservableList<ExchangeRate> exchangeRates = FXCollections.observableArrayList();
 
-        // Define Currency Column
+     
         TableColumn<ExchangeRate, String> currencyColumn = new TableColumn<>("Currency");
         currencyColumn.setCellValueFactory(new PropertyValueFactory<>("currencyCode"));
 
-        // Define Rate Column
+       
         TableColumn<ExchangeRate, Double> rateColumn = new TableColumn<>("Exchange Rate");
         rateColumn.setCellValueFactory(new PropertyValueFactory<>("exchangeRate"));
 
-        // Add columns to the table
+    
         tableView.getColumns().addAll(currencyColumn, rateColumn);
         tableView.setItems(exchangeRates);
 
-        // Populate the table with data from the database
         try {
             ResultSet rs = DBUtility.getExchangeRates();
             while (rs.next()) {
@@ -39,20 +38,20 @@ public class TableViewScene extends BorderPane {
             e.printStackTrace();
         }
 
-        // Set the table in the center of the layout
+       
         setCenter(tableView);
 
-        // Create a Back button to return to ChartView
+      
         Button backButton = new Button("Back");
         backButton.setOnAction(e -> {
-            ChartView chartView = new ChartView(); // Create a new ChartView instance
+            ChartView chartView = new ChartView(); 
             Scene currentScene = getScene();
             if (currentScene != null) {
-                currentScene.setRoot(chartView); // Switch back to ChartView
+                currentScene.setRoot(chartView);
             }
         });
 
-        // Add the Back button to the bottom of the layout
+   
         setBottom(backButton);
     }
 }
