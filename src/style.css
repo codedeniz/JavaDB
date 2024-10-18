@@ -1,79 +1,68 @@
-/* styles.css */
-
 .root {
-    -fx-background-color: #02023b; /* Dark background for the root */
-    -fx-font-family: "Arial"; /* Set a default font for the application */
-    -fx-padding: 20; /* General padding for the root element */
+    -fx-background-color: #02023b;
+    -fx-font-family: "Arial";
+    -fx-padding: 20;
 }
 
 .chart {
-    -fx-background-color: transparent; /* Transparent background for the chart */
+    -fx-background-color: transparent;
 }
 
-/* Button Styles */
 .button {
-    -fx-background-color: #5C5CFF; /* Button color */
-    -fx-text-fill: white; /* Button text color */
-    -fx-font-size: 14px; /* Font size for buttons */
-    -fx-padding: 10px 20px; /* Padding for buttons */
-    -fx-border-radius: 5px; /* Rounded corners for buttons */
-    -fx-background-radius: 5px; /* Rounded corners for buttons */
-    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 1); /* Drop shadow effect */
-    -fx-transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    -fx-background-color: #5C5CFF;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 1);
+    -fx-transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    -fx-background-color: #4C4CFF; /* Button hover color */
-    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0, 0, 1); /* Stronger drop shadow on hover */
+    -fx-background-color: #4C4CFF;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0, 0, 1);
 }
 
-/* Label Styles */
 .label {
-    -fx-text-fill: black; /* Text color for labels */
-    -fx-font-size: 16px; /* Font size for labels */
-    -fx-padding: 5; /* Padding for labels */
+    -fx-text-fill: black;
+    -fx-font-size: 16px;
+    -fx-padding: 5;
 }
 
-/* Chart Title Styles */
 .chart-title {
-    -fx-text-fill: #FFD700; /* Gold color for chart titles */
-    -fx-font-size: 18px; /* Font size for chart titles */
-    -fx-font-weight: bold; /* Bold text */
+    -fx-text-fill: #FFD700;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
 }
 
-/* Axis Label Styles */
 .axis-label {
-    -fx-text-fill: #CCCCCC; /* Light gray for axis labels */
+    -fx-text-fill: #CCCCCC;
 }
 
-/* Legend Styles */
 .legend {
-    -fx-background-color: transparent; /* Transparent background for legend */
-    -fx-text-fill: white; /* White text for legend */
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
 }
 
-/* Input Field Styles */
 .text-field {
-    -fx-background-color: #3A3A3A; /* Dark background for text fields */
-    -fx-text-fill: white; /* White text for text fields */
-    -fx-font-size: 14px; /* Font size for text fields */
-    -fx-padding: 10; /* Padding for text fields */
-    -fx-border-color: #5C5CFF; /* Border color for text fields */
-    -fx-border-radius: 5px; /* Rounded corners for text fields */
-    -fx-background-radius: 5px; /* Rounded corners for text fields */
+    -fx-background-color: #3A3A3A;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+    -fx-border-color: #5C5CFF;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
 }
 
 .text-field:focused {
-    -fx-border-color: #FFD700; /* Gold border on focus */
+    -fx-border-color: #FFD700;
 }
 
-/* Tooltip Styles */
 .tooltip {
-    -fx-background-color: #333333; /* Dark background for tooltips */
-    -fx-text-fill: white; /* White text for tooltips */
-    -fx-font-size: 12px; /* Font size for tooltips */
-    -fx-padding: 5; /* Padding for tooltips */
-    -fx-border-radius: 3px; /* Rounded corners for tooltips */
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 5;
+    -fx-border-radius: 3px;
 }
-
-/* Additional styles for other UI components can be added here */
